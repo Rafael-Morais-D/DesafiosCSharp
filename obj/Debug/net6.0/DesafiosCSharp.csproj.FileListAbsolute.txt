@@ -1,0 +1,15 @@
+D:\VS Projetos\DesafiosCSharp\bin\Debug\net6.0\DesafiosCSharp.exe
+D:\VS Projetos\DesafiosCSharp\bin\Debug\net6.0\DesafiosCSharp.deps.json
+D:\VS Projetos\DesafiosCSharp\bin\Debug\net6.0\DesafiosCSharp.runtimeconfig.json
+D:\VS Projetos\DesafiosCSharp\bin\Debug\net6.0\DesafiosCSharp.dll
+D:\VS Projetos\DesafiosCSharp\bin\Debug\net6.0\DesafiosCSharp.pdb
+D:\VS Projetos\DesafiosCSharp\obj\Debug\net6.0\DesafiosCSharp.csproj.AssemblyReference.cache
+D:\VS Projetos\DesafiosCSharp\obj\Debug\net6.0\DesafiosCSharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS Projetos\DesafiosCSharp\obj\Debug\net6.0\DesafiosCSharp.AssemblyInfoInputs.cache
+D:\VS Projetos\DesafiosCSharp\obj\Debug\net6.0\DesafiosCSharp.AssemblyInfo.cs
+D:\VS Projetos\DesafiosCSharp\obj\Debug\net6.0\DesafiosCSharp.csproj.CoreCompileInputs.cache
+D:\VS Projetos\DesafiosCSharp\obj\Debug\net6.0\DesafiosCSharp.dll
+D:\VS Projetos\DesafiosCSharp\obj\Debug\net6.0\refint\DesafiosCSharp.dll
+D:\VS Projetos\DesafiosCSharp\obj\Debug\net6.0\DesafiosCSharp.pdb
+D:\VS Projetos\DesafiosCSharp\obj\Debug\net6.0\DesafiosCSharp.genruntimeconfig.cache
+D:\VS Projetos\DesafiosCSharp\obj\Debug\net6.0\ref\DesafiosCSharp.dll
