@@ -22,7 +22,7 @@ else
 
 /* DESAFIO */
 
-string nomeJogador;
+/* string nomeJogador;
 bool validacaoJogador;
 
 Console.WriteLine("Bem-vindo ao torneio de Poker!");
@@ -57,13 +57,101 @@ if (validacaoJogador)
     Console.WriteLine($"Com {vitorias} você ficou com {pontuacao} pontos no torneio");
 }
 
-
-
-
 int VerificarPontuacao (int vitorias)
 {
     const int fatorVitoria = 3;
     int pontuacao =  vitorias * fatorVitoria;
 
     return pontuacao;
+} */
+
+/* LAÇOS DE REPETIÇÃO */
+
+/* void ExemploForEach()
+{
+    string[] jogadores = { "Rafael", "Rodrigo", "Renata", "Miriam", "Newton", "Aida", "Fabiana", "Leandro" };
+
+    foreach(string jogador in jogadores)
+    {
+        Console.WriteLine($"Bem-vindo ao torneio {jogador}");
+    }
+} 
+
+ ExemploForEach(); */
+
+/* void ExemploFor()
+{
+    string[] jogadores = { "Rafael", "Rodrigo", "Renata", "Miriam", "Newton", "Aida", "Fabiana", "Leandro" };
+
+    for (int contador = 0; contador < jogadores.Length; contador++)
+    {
+        Console.WriteLine($"Bem-vindo ao torneio {jogadores[contador]}");
+    }
 }
+
+ExemploFor(); */
+
+/* void ExemploWhile()
+{
+    Console.WriteLine("Qual é a sua pontuãção?");
+    int pontuacaoJogador = Convert.ToInt32(Console.ReadLine());
+
+    if (pontuacaoJogador < 27)
+    {
+        while (pontuacaoJogador < 27)
+        {
+            Console.WriteLine("Jogando");
+            Console.WriteLine("Você ganhou? (S/N)");
+            string ganhou = Console.ReadLine();
+            if (ganhou == "S")
+            {
+                pontuacaoJogador += 3;
+            }
+            else
+            {
+                Console.WriteLine("Infelizmente você está fora do torneio");
+                break;
+            }
+
+            Console.WriteLine("Você está classificado para o torneio");
+        }
+    }else
+    {
+        Console.WriteLine("Você já está classificado para o torneio");
+    }
+}
+
+ExemploWhile(); */
+
+void ExemploDoWhile()
+{
+    Console.WriteLine("Qual é a sua pontuãção?");
+    int pontuacaoJogador = Convert.ToInt32(Console.ReadLine());
+
+    if (pontuacaoJogador < 27)
+    {
+        do
+        {
+            Console.WriteLine("Jogando");
+            Console.WriteLine("Você ganhou? (S/N)");
+            string ganhou = Console.ReadLine();
+            if (ganhou == "S")
+            {
+                pontuacaoJogador += 3;
+            }
+            else
+            {
+                Console.WriteLine("Infelizmente você está fora do torneio");
+                break;
+            }
+        } while (pontuacaoJogador < 27);
+        
+        Console.WriteLine("Você está classificado para o torneio");
+    }
+    else
+    {
+        Console.WriteLine("Você já está classificado para o torneio");
+    }
+}
+
+ExemploDoWhile();
