@@ -123,35 +123,67 @@ ExemploFor(); */
 
 ExemploWhile(); */
 
-void ExemploDoWhile()
+/* void ExemploDoWhile()
 {
-    Console.WriteLine("Qual é a sua pontuãção?");
-    int pontuacaoJogador = Convert.ToInt32(Console.ReadLine());
+    string mensagem = "";
+    try
+    {
+        Console.WriteLine("Qual é a sua pontuãção?");
+        int pontuacaoJogador = Convert.ToInt32(Console.ReadLine());
 
-    if (pontuacaoJogador < 27)
-    {
-        do
+        if (pontuacaoJogador < 27)
         {
-            Console.WriteLine("Jogando");
-            Console.WriteLine("Você ganhou? (S/N)");
-            string ganhou = Console.ReadLine();
-            if (ganhou == "S")
+            do
             {
-                pontuacaoJogador += 3;
-            }
-            else
+                Console.WriteLine("Jogando");
+                Console.WriteLine("Você ganhou? (S/N)");
+                string ganhou = Console.ReadLine();
+                if (ganhou == "S")
+                {
+                    pontuacaoJogador += 3;
+                }
+                else
+                {
+                    break;
+                }
+            } while (pontuacaoJogador < 27);
+
+            if (pontuacaoJogador >= 27)
             {
-                Console.WriteLine("Infelizmente você está fora do torneio");
-                break;
+                mensagem = "Você está classificado para o torneio";
+            } else
+            {
+                mensagem = "Infelizmente você está fora do torneio";
             }
-        } while (pontuacaoJogador < 27);
-        
-        Console.WriteLine("Você está classificado para o torneio");
+        }
+        else
+        {
+            mensagem = "Você já está classificado para o torneio";
+        }
     }
-    else
+    catch (Exception ex)
     {
-        Console.WriteLine("Você já está classificado para o torneio");
+        mensagem = $"Aconteceu o seguinte erro: {ex.Message}";
     }
+    finally
+    {
+        Console.WriteLine(mensagem);
+    }
+    
 }
 
-ExemploDoWhile();
+ExemploDoWhile(); */
+
+/* LISTAS / ARRAYS */
+
+void ExemploArrays()
+{
+    int[] notas = { 78, 67, 90, 95, 10, 14, 22, 190, 45 };
+    List<int> notasDaProva = new List<int>() { 6, 7, 8, 6, 5, 10, 9, 7 };
+
+    int qtdNotasAcima80 = notas.Where(n => n > 80).Count();
+
+    Console.WriteLine($"{qtdNotasAcima80} notas são maiores que 80");
+}
+
+ExemploArrays();
